@@ -1,0 +1,108 @@
+/* Cores principais */
+:root {
+    --vermelho: #991E27;
+    --preto: #000000;
+    --dourado1: #8E4D05;
+    --dourado2: #E9CB9A;
+}
+
+/* Geral */
+body {
+    background-color: var(--preto);
+    color: var(--dourado2);
+    font-family: "Georgia", serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 300px;
+    max-width: 80%;
+}
+
+/* Introdução */
+.intro {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(180deg, var(--dourado1), var(--dourado2));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.intro h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 20px;
+}
+
+/* Seções */
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 32px;
+    background: linear-gradient(180deg, var(--dourado1), var(--dourado2));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: rgba(153, 30, 39, 0.12);
+    border: 1px solid var(--vermelho);
+    padding: 25px;
+    width: 280px;
+    border-radius: 10px;
+    backdrop-filter: blur(3px);
+    transition: 0.3s;
+}
+
+.card:hover {
+    background-color: rgba(153, 30, 39, 0.35);
+    transform: scale(1.05);
+}
+
+.card h3 {
+    color: var(--dourado2);
+    font-size: 22px;
+}
+
+/* Rodapé */
+.footer {
+    text-align: center;
+    padding: 40px;
+    position: relative;
+}
+
+.watermark {
+    width: 100px;
+    opacity: 0.2;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -10px;
+}
+
+.footer p {
+    margin-top: 80px;
+    color: var(--dourado2);
+}
